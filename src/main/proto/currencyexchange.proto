@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.adepuu.grpcinterface.lib";
+option java_outer_classname = "CurrencyExchangeProto";
+
+// The greeting service definition.
+service CurrencyExchange {
+  // Gets the exchanged amount
+  rpc GetExchangeAmount (ExchangeRequest) returns (ExchangeResponse) {
+  }
+}
+
+// The request message containing the currency pair, amount and date.
+message ExchangeRequest {
+  string pair = 1;
+  int32 amount = 2;
+  string date = 3;
+}
+
+// The response message containing the exchanged amount.
+message ExchangeResponse {
+  double exchangedAmount = 1;
+}
