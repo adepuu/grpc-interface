@@ -4,7 +4,7 @@ option java_multiple_files = true;
 option java_package = "com.adepuu.grpcinterface.lib";
 option java_outer_classname = "CurrencyExchangeProto";
 
-// The greeting service definition.
+// The currency exchange service definition.
 service CurrencyExchange {
   // Gets the exchanged amount
   rpc GetExchangeAmount (ExchangeRequest) returns (ExchangeResponse) {
