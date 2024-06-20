@@ -14,7 +14,7 @@ service CurrencyExchange {
 // The request message containing the currency pair, amount and date.
 message ExchangeRequest {
   string pair = 1;
-  int32 amount = 2;
+  string amount = 2;
   string date = 3;
 }
 
